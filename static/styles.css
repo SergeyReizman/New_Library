@@ -1,0 +1,109 @@
+/* Define CSS custom properties (variables) for color consistency */
+:root {
+    --primary-color: #3333CC; /* Dark Blue */
+    --secondary-color: #007000; /* Green */
+    --background-color: #F5F5F5; /* Light Gray */
+    --text-color: #000000; /* Black */
+    --success-color: #007000; /* Green for success messages */
+    --error-color: #FF0000; /* Red for error messages */
+}
+
+/* General styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color); /* Use the background color variable */
+    color: var(--text-color); /* Use the text color variable */
+    margin: 0; /* Remove default body margin for consistency */
+    padding: 0; /* Remove default body padding for consistency */
+}
+
+/* Styles for the main content container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading styles */
+h1, h2 {
+    color: var(--primary-color); /* Use the primary color variable for headings */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #E0E0E0; /* Light Gray */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #E0E0E0; /* Light Gray */
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="number"] {
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #E0E0E0; /* Light Gray */
+    padding: 5px;
+    margin: 5px 0;
+    width: 100%; /* Ensure input fields expand to full width */
+}
+
+/* Button styles */
+button[type="submit"] {
+    background-color: var(--primary-color); /* Use the primary color variable for buttons */
+    color: #FFFFFF; /* White */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%; /* Ensure buttons expand to full width */
+}
+
+/* Flash message styles */
+.flash-messages {
+    margin-top: 20px;
+}
+
+.flash-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.flash-message.success {
+    background-color: var(--success-color); /* Use the success color variable for success messages */
+    color: #FFFFFF; /* White text for success messages */
+}
+
+.flash-message.error {
+    background-color: var(--error-color); /* Use the error color variable for error messages */
+    color: #FFFFFF; /* White text for error messages */
+}
+
+/* Responsive design adjustments for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 768px) {
+    /* Adjust the font size for better readability on small screens */
+    body {
+        font-size: 16px;
+    }
+
+    /* Increase spacing for better touch interaction */
+    input[type="text"],
+    input[type="number"],
+    button[type="submit"] {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    /* Modify table styles for better display on small screens */
+    table {
+        font-size: 14px;
+    }
+}
