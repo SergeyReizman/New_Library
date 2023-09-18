@@ -2,6 +2,75 @@ Library Management System
 
 Brief description of the project:
 
+Library Management System
+
+A simple library management system implemented using Python and Flask with SQLite database.
+
+Features
+
+View a list of books and customers.
+Add new books and customers.
+Delete books and customers.
+RESTful API for managing books and customers.
+
+Getting Started
+
+Clone the repository:
+
+git clone https://github.com/SergeyReizman/New_Library.git
+cd library-management
+Create a virtual environment (optional but recommended):
+
+python -m venv venv
+source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+Install the required dependencies:
+
+pip install -r requirements.txt
+
+Set your secret key (replace 'your_secret_key_here'):
+
+In app.py, replace 'your_secret_key_here' with a secure secret key.
+
+Create the database tables:
+
+Run the application once to automatically create the "books" and "customers" tables in the SQLite database:
+
+bash
+Copy code
+python app.py
+Start the application:
+
+bash
+Copy code
+python app.py
+Access the application:
+
+Open a web browser and navigate to http://localhost:5000 to use the web interface for managing books and customers.
+
+API Endpoints
+GET /api/books: Get a list of all books.
+
+POST /api/books: Add a new book.
+
+GET /api/books/<int:book_id>: Get details of a specific book.
+
+DELETE /api/books/<int:book_id>: Delete a specific book.
+
+GET /api/customers: Get a list of all customers.
+
+POST /api/customers: Add a new customer.
+
+GET /api/customers/<int:customer_id>: Get details of a specific customer.
+
+DELETE /api/customers/<int:customer_id>: Delete a specific customer.
+
+Dependencies
+Flask
+Flask-RESTful
+SQLite
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
 Flask application with a RESTful API for managing books and customers. 
 The application allows users to add, delete, and borrow books, as well as add and delete customers.
 
@@ -167,11 +236,13 @@ pip install flask flask-restful
 Running the Application
 Clone this repository to your local machine:
 
-git clone (project url)
+git clone https://github.com/SergeyReizman/New_Library.git
 
 Open the terminal/command prompt and navigate to the project directory.
 
-cd
+cd New_Library
+
+pip install -r requirements.txt
 
 Set Up a Virtual Environment (Optional):
 
