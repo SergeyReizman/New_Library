@@ -167,11 +167,13 @@ pip install flask flask-restful
 Running the Application
 Clone this repository to your local machine:
 
-git clone (project url)
+git clone https://github.com/SergeyReizman/New_Library.git
 
 Open the terminal/command prompt and navigate to the project directory.
 
-cd
+cd New_Library
+
+pip install -r requirements.txt
 
 Set Up a Virtual Environment (Optional):
 
