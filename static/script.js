@@ -1,15 +1,45 @@
-// This is a simple JavaScript file for your Flask web application.
-
-// Function to perform an action when the page loads
 document.addEventListener("DOMContentLoaded", function () {
-    // You can add your JavaScript code here
-    // For example, you can add event listeners or perform actions when the page loads
-    console.log("Script.js loaded successfully!"); // Sample console log message
+    console.log("Script.js loaded successfully!");
+
+    var addButton = document.getElementById("add-book-button");
+    if (addButton) {
+        addButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert("Add Book button clicked!");
+            postBook();
+        });
+    }
 });
 
-// Example: Adding an event listener to a button
-// Replace 'your-button-id' with the actual ID of your button element
-document.getElementById("your-button-id").addEventListener("click", function () {
-    // Replace this with the action you want to perform when the button is clicked
-    alert("Button clicked!");
-});
+// Example: Function to post book data
+function postBook() {
+    const title = document.getElementById("title").value;
+    const author = document.getElementById("author").value;
+    const year_published = document.getElementById("year_published").value;
+    const copies = document.getElementById("copies").value;
+
+    const data = {
+        title: title,
+        author: author,
+        year_published: year_published,
+        copies: copies
+    };
+
+    fetch('/api/books', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the response if needed
+        console.log(data);
+        window.location.reload(); // Refresh the page
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error adding book');
+    });
+}

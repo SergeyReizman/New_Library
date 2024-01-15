@@ -18,11 +18,12 @@ Getting Started
 Clone the repository:
 
 git clone https://github.com/SergeyReizman/New_Library.git
-cd library-management
+cd NEW_LIBRARY_Y_2
 Create a virtual environment (optional but recommended):
 
 python -m venv venv
 source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+
 Install the required dependencies:
 
 pip install -r requirements.txt
@@ -35,15 +36,9 @@ Create the database tables:
 
 Run the application once to automatically create the "books" and "customers" tables in the SQLite database:
 
-bash
-Copy code
 python app.py
-Start the application:
 
-bash
-Copy code
-python app.py
-Access the application:
+Start the application:
 
 Open a web browser and navigate to http://localhost:5000 to use the web interface for managing books and customers.
 
@@ -131,7 +126,7 @@ Overall, this Flask application provides a basic interface for managing books an
 
 ## Table of Contents
 
-- [Project Name](Library)
+  - [Project Name](Library)
   - [Table of Contents](#table-of-contents)
   - [Description]
 
@@ -185,6 +180,7 @@ You can install Flask and Flask-RESTful using pip:
 
 ```bash
 pip install flask flask-restful
+pip install flask_cors
 
     1. Access the Web Interface:
     The librarian should open a web browser and navigate to the URL where the library management system is hosted. 

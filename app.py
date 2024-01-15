@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_restful import Api, Resource, reqparse
 import sqlite3
-
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app)
+
 api = Api(app)
 
 # Set a secret key for flash messages
@@ -69,6 +71,8 @@ class BookResource(Resource):
         conn.commit()
         conn.close()
         flash('Book added successfully', 'success')
+        # return redirect(url_for('api_books'))
+
         return redirect(url_for('index'))
 
     def delete(self, book_id):
@@ -114,10 +118,18 @@ customer_parser = reqparse.RequestParser()
 customer_parser.add_argument('name', type=str, required=True, help='Customer name')
 
 # Add resource classes to the API
-api.add_resource(BookResource, '/api/books', '/api/books/<int:book_id>')
+
+api.add_resource(BookResource, '/api/books', '/api/books/<int:book_id>', endpoint='api.books')
 api.add_resource(CustomerResource, '/api/customers', '/api/customers/<int:customer_id>')
 
+
 if __name__ == '__main__':
+    with app.test_request_context():
+        for rule in app.url_map.iter_rules():
+            if 'api.books' in rule.endpoint:
+                print(rule.endpoint, rule.methods)
+            else:
+                print("not found endpoint")
     # Create the "books" and "customers" tables if they don't exist before running the app
     create_books_table()
     create_customers_table()
