@@ -64,6 +64,7 @@ class BookResource(Resource):
         return [{'id': book['id'], 'title': book['title'], 'author': book['author'], 'year_published': book['year_published'], 'copies': book['copies']} for book in books]
 
     def post(self):
+        print("-------------------------------------------------")
         args = book_parser.parse_args()
         conn = get_db_connection()
         conn.execute("INSERT INTO books (title, author, year_published, copies) VALUES (?, ?, ?, ?)",
@@ -91,9 +92,11 @@ class CustomerResource(Resource):
         return [{'id': customer['id'], 'name': customer['name']} for customer in customers]
 
     def post(self):
-        args = customer_parser.parse_args()
+        name =request.form.get('name')
+        id =request.form.get('id')
+        print(name)
         conn = get_db_connection()
-        conn.execute("INSERT INTO customers (name) VALUES (?)", (args['name'],))
+        conn.execute(f"INSERT INTO customers (name,id) VALUES ('{name}',{id})")
         conn.commit()
         conn.close()
         flash('Customer added successfully', 'success')

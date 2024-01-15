@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (addButton) {
         addButton.addEventListener("click", function (event) {
             event.preventDefault(); // Prevent the default form submission
-            alert("Add Book button clicked!");
+            // alert("Add Book button clicked!");
             postBook();
         });
     }
@@ -33,13 +33,13 @@ function postBook() {
         body: JSON.stringify(data),
     })
     .then(response => response.json())
-    .then(data => {
-        // Handle the response if needed
-        console.log(data);
-        window.location.reload(); // Refresh the page
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Error adding book');
-    });
+    // .then(data => {
+    //     // Handle the response if needed
+    //     // console.log(data);
+    //     // window.location.reload(); // Refresh the page
+    // })
+    // .catch(error => {
+    //     console.error('Error:', error);
+    //     alert('Error adding book');
+    // });
 }
