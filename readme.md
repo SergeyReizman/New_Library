@@ -426,4 +426,8 @@ In conclusion, it is with deep respect and appreciation that we acknowledge John
 
 Thank you, John Bryce Tel Aviv, and the remarkable lecturers who have been instrumental in our journey toward success.
 
+Why This Project Matters:
+
+I built this system to simplify library management with efficient workflows, scalable APIs, and a user-focused design.
+
 "# New_Library" 
