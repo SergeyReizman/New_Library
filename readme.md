@@ -410,15 +410,20 @@ This project is licensed under the Strict License - see the Unusially Strict Lic
 
 ## Acknowledgments
 
-In our pursuit of knowledge and professional growth, we would like to extend our heartfelt appreciation to John Bryce Tel Aviv and its esteemed team of talented lecturers. 
-Their dedication and expertise have played an integral role in shaping our educational journey, and we are deeply grateful for their commitment to excellence.
-John Bryce Tel Aviv has consistently demonstrated a commitment to providing high-quality education and training programs that empower individuals to thrive in their respective fields. 
-The institution's unwavering dedication to fostering a culture of continuous learning and innovation is truly commendable.
-Equally praiseworthy are the lecturers who have shared their wisdom, industry insights, and expertise with us. 
-Their passion for teaching, coupled with their real-world experience, has enriched our learning experiences and equipped us with the skills and knowledge needed to excel in our careers.
-We would like to express our gratitude for the unwavering support, guidance, and mentorship provided by John Bryce Tel Aviv and its lecturers. 
-Their contributions have not only enhanced our professional capabilities but have also inspired us to strive for excellence in all our endeavors.
-In conclusion, it is with deep respect and appreciation that we acknowledge John Bryce Tel Aviv and its dedicated lecturers for their invaluable contributions to our educational and professional development. 
-Their commitment to nurturing talent and fostering growth sets a benchmark for excellence that we will carry forward throughout our careers.
-Thank you, John Bryce Tel Aviv, and the remarkable lecturers who have been instrumental in our journey towards success.
+New_Library
+
+Acknowledgments
+
+In our pursuit of knowledge and professional growth, we would like to extend our heartfelt appreciation to John Bryce Tel Aviv and its esteemed team of talented lecturers. Their dedication and expertise have played an integral role in shaping our educational journey, and we are deeply grateful for their commitment to excellence.
+
+John Bryce Tel Aviv has consistently demonstrated a commitment to providing high-quality education and training programs that empower individuals to thrive in their respective fields. The institution's unwavering dedication to fostering a culture of continuous learning and innovation is truly commendable.
+
+Equally praiseworthy are the lecturers who have shared their wisdom, industry insights, and expertise with us. Their passion for teaching, coupled with their real-world experience, has enriched our learning experiences and equipped us with the skills and knowledge needed to excel in our careers.
+
+We would like to express our gratitude for the unwavering support, guidance, and mentorship provided by John Bryce Tel Aviv and its lecturers. Their contributions have not only enhanced our professional capabilities but have also inspired us to strive for excellence in all our endeavors.
+
+In conclusion, it is with deep respect and appreciation that we acknowledge John Bryce Tel Aviv and its dedicated lecturers for their invaluable contributions to our educational and professional development. Their commitment to nurturing talent and fostering growth sets a benchmark for excellence that we will carry forward throughout our careers.
+
+Thank you, John Bryce Tel Aviv, and the remarkable lecturers who have been instrumental in our journey toward success.
+
 "# New_Library" 
