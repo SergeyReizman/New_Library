@@ -39,14 +39,15 @@ Brief description of the project:
 
 Library Management System
 
+Overview
+A web-based application for managing books and customers, implemented with Python, Flask, and SQLite. It features a RESTful API and user-friendly HTML templates for seamless interaction.
+
+Key Features
+Books & Customers Management: Add, view, edit, and delete records.
+Borrow & Return Books: Track borrowing and returning actions.
+RESTful API: Endpoints for programmatic book and customer management.
+
 A simple library management system implemented using Python and Flask with SQLite database.
-
-Features
-
-View a list of books and customers.
-Add new books and customers.
-Delete books and customers.
-RESTful API for managing books and customers.
 
 Getting Started
 
@@ -77,27 +78,39 @@ Start the application:
 
 Open a web browser and navigate to http://localhost:5000 to use the web interface for managing books and customers.
 
-API Endpoints
-GET /api/books: Get a list of all books.
+API Endpoints Overview
 
-POST /api/books: Add a new book.
+Books Management:
+Retrieve All Books:
+GET /api/books
 
-GET /api/books/<int:book_id>: Get details of a specific book.
+Add a New Book:
+POST /api/books
 
-DELETE /api/books/<int:book_id>: Delete a specific book.
+Retrieve a Book by ID:
+GET /api/books/<int:book_id>
 
-GET /api/customers: Get a list of all customers.
+Delete a Book by ID:
+DELETE /api/books/<int:book_id>
 
-POST /api/customers: Add a new customer.
+Customers Management:
+Retrieve All Customers:
+GET /api/customers
 
-GET /api/customers/<int:customer_id>: Get details of a specific customer.
+Add a New Customer:
+POST /api/customers
 
-DELETE /api/customers/<int:customer_id>: Delete a specific customer.
+Retrieve a Customer by ID:
+GET /api/customers/<int:customer_id>
+
+Delete a Customer by ID:
+DELETE /api/customers/<int:customer_id>
 
 Dependencies
-Flask
-Flask-RESTful
-SQLite
+Flask - Web framework for building the application.
+Flask-RESTful - Adds REST API capabilities.
+SQLite - Lightweight database for storing books and customers data (built-in with Python).
+
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
