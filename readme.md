@@ -398,49 +398,44 @@ typing_extensions==4.7.1
 Werkzeug==2.3.7
 WTForms==3.0.1
 
-## Built With
+Built With
 
-1. Passion
+Passion
 
-2. In the provided Python Flask application, several technologies, frameworks, and libraries are used. Here's a list of them:
+Technologies, Frameworks, and Libraries:
 
-Flask: Flask is a micro web framework for Python. 
-It's used to create web applications and provides tools and libraries for building web applications, including handling routing, HTTP requests, and more.
+Flask: A micro web framework for Python, used to create web applications, handle routing, process HTTP requests, and manage server-side logic.
 
-Jinja2: Jinja2 is a templating engine for Python. It's integrated with Flask and is used for rendering HTML templates with dynamic content.
+Jinja2: A templating engine for rendering dynamic HTML content, integrated with Flask.
 
-HTML (HyperText Markup Language): HTML is the standard markup language used for creating web pages. The application uses HTML templates to structure and display web content.
+HTML (HyperText Markup Language): Used to structure and display web content through templates.
 
-HTTP (Hypertext Transfer Protocol): HTTP is the protocol used for communication between web browsers and web servers. The request object from Flask is used to handle incoming HTTP requests.
+HTTP (Hypertext Transfer Protocol): Enables communication between web browsers and servers, with Flask's request object handling incoming HTTP requests.
 
-Python: Python is the programming language in which the entire application is written.
+Python: The programming language in which the entire application is built.
 
-These are the core technologies and frameworks used in the application.
+These core technologies and frameworks form the backbone of the application.
 
-## License
+License
 
-This project is licensed under the Strict License - see the Unusially Strict License for details.
-
-## Acknowledgments
-
-New_Library
+This project is licensed under the Strict License - see the "Unusually Strict License" for more details.
 
 Acknowledgments
 
-In our pursuit of knowledge and professional growth, we would like to extend our heartfelt appreciation to John Bryce Tel Aviv and its esteemed team of talented lecturers. Their dedication and expertise have played an integral role in shaping our educational journey, and we are deeply grateful for their commitment to excellence.
+New_Library
 
-John Bryce Tel Aviv has consistently demonstrated a commitment to providing high-quality education and training programs that empower individuals to thrive in their respective fields. The institution's unwavering dedication to fostering a culture of continuous learning and innovation is truly commendable.
+We extend our heartfelt appreciation to John Bryce Tel Aviv and its esteemed team of talented lecturers. Their dedication and expertise have been instrumental in shaping our educational journey, fostering professional growth, and inspiring us to strive for excellence.
 
-Equally praiseworthy are the lecturers who have shared their wisdom, industry insights, and expertise with us. Their passion for teaching, coupled with their real-world experience, has enriched our learning experiences and equipped us with the skills and knowledge needed to excel in our careers.
+John Bryce Tel Aviv consistently demonstrates a commitment to high-quality education, providing training programs that empower individuals to thrive. Their dedication to fostering continuous learning and innovation is truly commendable.
 
-We would like to express our gratitude for the unwavering support, guidance, and mentorship provided by John Bryce Tel Aviv and its lecturers. Their contributions have not only enhanced our professional capabilities but have also inspired us to strive for excellence in all our endeavors.
+We deeply appreciate the lecturers' passion for teaching, real-world insights, and unwavering support. Their mentorship has enhanced our professional capabilities and inspired us to excel in our careers.
 
-In conclusion, it is with deep respect and appreciation that we acknowledge John Bryce Tel Aviv and its dedicated lecturers for their invaluable contributions to our educational and professional development. Their commitment to nurturing talent and fostering growth sets a benchmark for excellence that we will carry forward throughout our careers.
+In conclusion, we acknowledge John Bryce Tel Aviv and its dedicated lecturers for their invaluable contributions. Their commitment to nurturing talent and fostering growth sets a benchmark for excellence that we will carry throughout our careers.
 
 Thank you, John Bryce Tel Aviv, and the remarkable lecturers who have been instrumental in our journey toward success.
 
-Why This Project Matters:
+Why This Project Matters
 
-I built this system to simplify library management with efficient workflows, scalable APIs, and a user-focused design.
+I built this system to simplify library management through efficient workflows, scalable APIs, and a user-focused design.
 
-"# New_Library" 
+New_Library
