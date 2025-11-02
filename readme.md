@@ -1,3 +1,212 @@
+# 📚 New_Library — Streamlined Library Management System  
+
+[![Made with Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/)
+[![Backend Framework](https://img.shields.io/badge/Flask-Backend-black?logo=flask)](https://flask.palletsprojects.com/)
+[![Database](https://img.shields.io/badge/SQLite-Database-blueviolet?logo=sqlite)](https://www.sqlite.org/index.html)
+[![REST API](https://img.shields.io/badge/Flask--RESTful-API-green?logo=python)](https://flask-restful.readthedocs.io/)
+[![License](https://img.shields.io/badge/License-MIT-yellow?logo=open-source-initiative)](./LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue)](#)
+[![Build](https://img.shields.io/badge/Build-Passing-brightgreen?logo=githubactions)](#)
+[![HTML](https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-orange?logo=html5)](#)
+
+---
+
+## 💡 Efficiently Organize, Manage, and Innovate  
+
+**New_Library** is a robust and feature-rich **Library Management System** built with  
+🐍 **Python**, ⚙️ **Flask**, and 🗃️ **SQLite**.  
+It simplifies daily operations, allowing administrators and patrons to manage books, customers, and transactions through an intuitive, web-based interface.
+
+---
+
+## ✨ Key Features  
+
+### 📖 Book & Patron Management  
+- ➕ Add, view, edit, and delete books and patrons  
+
+### 🔄 Borrowing System  
+- 📦 Streamlined process for borrowing and returning books  
+- 📊 Real-time update of availability and records  
+
+### 🔧 RESTful API Endpoints  
+- 🔗 Manage books and patrons programmatically  
+- ⚙️ Integration-ready JSON API for external systems  
+
+### 🌐 User-Friendly Interface  
+- 💡 Clean HTML templates with Bootstrap styling  
+- 🧭 Simple navigation and intuitive layout  
+
+### 📢 Real-Time Feedback  
+- 📩 Flash messages confirm actions instantly (add, delete, borrow, return)
+
+---
+
+## 🛠️ Technologies Used  
+
+| Layer | Technology | Description |
+|:------|:------------|:-------------|
+| 🖥️ Frontend | **HTML**, **CSS**, **JavaScript** | Responsive UI & client-side validation |
+| ⚙️ Backend | **Python**, **Flask**, **Flask-RESTful**, **Flask-SQLAlchemy** | API routing, database ORM, and logic |
+| 🗄️ Database | **SQLite** | Lightweight relational database |
+| 🧰 Other | **Flask-WTF**, **Jinja2**, **WTForms** | Form validation and dynamic rendering |
+
+---
+
+## 📋 Project Overview  
+
+The system provides a unified solution for managing a library’s daily workflow:
+
+- Manage books, customers, and loans  
+- Track borrowing history  
+- Provide both **web UI** and **REST API** access  
+- Enhance user experience via Flask flash messaging  
+
+---
+
+## ⚙️ Getting Started  
+
+### 🧾 Prerequisites  
+Make sure you have:
+- Python ≥ 3.7  
+- Flask, Flask-RESTful, Flask-SQLAlchemy  
+
+Install using pip:  
+```bash
+pip install flask flask-restful flask-sqlalchemy flask-wtf flask-cors
+
+
+# Clone the repository
+git clone https://github.com/SergeyReizman/New_Library.git
+cd New_Library
+
+# (Optional) Create a virtual environment
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+venv\Scripts\activate     # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+python app.py
+
+Access the app at: http://localhost:5000
+
+🌐 Web Interface
+🏠 Home Page
+
+Displays:
+
+All books & customers
+
+Forms to add, edit, or delete entries
+
+📚 Add Book
+
+Form fields:
+
+Title
+
+Author
+
+Year Published
+
+Copies Available
+
+👤 Add Customer
+
+Form fields:
+
+Customer ID
+
+Name
+
+🔄 Borrow / Return Books
+
+Borrow or return by entering:
+
+Customer ID
+
+Book ID
+
+🔗 RESTful API Endpoints
+
+📘 Books Management
+
+| Method | Endpoint               | Description            |
+| :----- | :--------------------- | :--------------------- |
+| GET    | `/api/books`           | Retrieve all books     |
+| POST   | `/api/books`           | Add a new book         |
+| GET    | `/api/books/<book_id>` | Retrieve specific book |
+| DELETE | `/api/books/<book_id>` | Delete a book          |
+
+
+🧠 Application Structure
+
+New_Library/
+ ├─ static/
+ │   ├─ styles.css
+ │   └─ script.js
+ ├─ templates/
+ │   └─ index.html
+ ├─ app.py
+ ├─ requirements.txt
+ ├─ README.md
+ └─ library.db
+
+🧪 Testing
+
+You can test via:
+
+Web interface (http://localhost:5000)
+
+API tools (e.g., Postman, cURL)
+
+Example test:
+
+curl http://localhost:5000/api/books
+
+Shutdown:
+
+CTRL + C
+
+
+🌟 Future Enhancements
+
+🔹 Authentication & Roles (Admin/Staff/User)
+
+🔹 Book search & filtering
+
+🔹 Loan history tracking
+
+🔹 Cloud database integration
+
+🔹 Dockerized deployment
+
+🔹 Export/Import (CSV, JSON)
+
+🧾 License
+
+This project is licensed under the MIT License.
+See the LICENSE
+ file for details.
+
+🙌 Acknowledgments
+
+Special thanks to John Bryce Tel Aviv and its exceptional team of lecturers
+for their mentorship, dedication, and inspiration during development.
+
+Your guidance made this project possible and fostered both skill and creativity.
+✨ We are grateful for your commitment to excellence in education.
+
+👨‍💻 Author
+
+Sergey Reizman
+
+https://www.linkedin.com/in/sergey-reizman
+
+----------------------------------------------------------------------------------------------------------
+
 📚 New_Library - Streamlined Library Management System
 
 💡 Efficiently Organize, Manage, and Innovate
